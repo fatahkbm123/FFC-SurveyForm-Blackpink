@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FCC: Survey Form</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill the form, thank you.</p>
+    </div>
+
+    <form id="survey-form">
+        <div class="formGroup">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" required placeholder="Enter your name..">
+        </div>
+        <div class="formGroup">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" required placeholder="dummy@gmail.com">
+        </div>
+        <div class="formGroup">
+            <label for="number" id="number-label">Age <small>(optional)</small></label>
+            <input type="number" id="number" required placeholder="Age.." min="17" max="40">
+        </div>
+        <div class="formGroup">
+            <label for="dropdown">How do you know about Blackpink?</label>
+            <select id="dropdown">
+                <option selected>-- Select this option --</option>
+                <option>Friends</option>
+                <option>Your Family</option>
+                <option>In Social Media</option>
+                <option>Television</option>
+                <option>Radio</option>
+            </select>
+        </div>
+
+        <div class="formGroup">
+            <label>Who is your favorite Member?</label>
+        </div>
+
+        <div class="contentRadio">
+            <div class="formGroupRadio">
+                <input type="radio" id="lisa" name="member" value="lisa">
+                <label for="lisa">Lisa</label>
+            </div>
+            <div class="formGroupRadio">
+                <input type="radio" id="jennie" name="member" value="jennie">
+                <label for="jennie">Jennie</label>
+            </div>
+            <div class="formGroupRadio">
+                <input type="radio" id="jisoo" name="member" value="jisoo">
+                <label for="jisoo">Ji-soo</label>
+            </div>
+            <div class="formGroupRadio">
+                <input type="radio" id="rose" name="member" value="Rose">
+                <label for="rose">Rosé</label>
+            </div>
+        </div>
+
+        <div class="formGroup">
+            <label>Please choose your favorite album(s)?</label>
+        </div>
+
+        <div class="contentCheckbox">
+            <div class="formGroupCheckbox">
+                <input type="checkbox" value="1" id="1">
+                <label for="1">How you like that</label>
+            </div>
+            <div class="formGroupCheckbox">
+                <input type="checkbox" value="2" id="2">
+                <label for="2">Ice Cream</label>
+            </div>
+            <div class="formGroupCheckbox">
+                <input type="checkbox" value="3" id="3">
+                <label for="3">Ddu-du Ddu-du</label>
+            </div>
+            <div class="formGroupCheckbox">
+                <input type="checkbox" value="4" id="4">
+                <label for="4">You Never Know</label>
+            </div>
+        </div>
+
+        <div class="formGroup">
+            <label for="comments">Any comments or suggestions?</label>
+            <textarea id="comments" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="formGroup">
+            <button id="submit">Submit</button>
+        </div>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
